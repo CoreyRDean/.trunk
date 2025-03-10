@@ -19,6 +19,8 @@ jobs:
       cancel-in-progress: true
 
     steps:
+      - name: Enable Corepack
+        run: corepack enable
       - name: Trunk Check
         uses: trunk-io/trunk-action@v1
         with:
